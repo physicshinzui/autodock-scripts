@@ -24,9 +24,12 @@ mv vina_1.2.3_linux_x86_64 vina # for simplicity
   - I struggled to find and install them... The two script seems important to create pdbqt files at the beginning.
 - Download it from https://ccsb.scripps.edu/adfr/downloads/ for the latest Linux version (ADFRsuit 1.0)
 - Put it on a directory, say, Downloads.
-- `chmod +x ADFRsuite_Linux-x86_64_1.0_install`
-- `cd ADFRsuite-1.0`
-- `tar xvf ADFRsuite_x86_64Linux_1.0.tar.gz`
+```
+chmod +x ADFRsuite_Linux-x86_64_1.0_install
+./ADFRsuite_Linux-x86_64_1.0_install
+cd ADFRsuite-1.0
+tar xvf ADFRsuite_x86_64Linux_1.0.tar.gz
+```
 - Add a line in `bashrc`: 
   - `export PATH=/home/siida/ADFRsuite-1.0/ADFRsuite_x86_64Linux_1.0/bin:$PATH`
 - Now, all the script given by ADFRsuite are available!
