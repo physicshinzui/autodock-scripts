@@ -19,9 +19,8 @@ mv vina_1.2.3_linux_x86_64 vina # for simplicity
 
 ## 2. Installation of ADFRsuite 
 - This software is necessary for 
-  - `prepare_receptor.py` and 
-  - `prepare_ligand.py`
-  - I struggled to find and install them... The two script seems important to create pdbqt files at the beginning.
+  - `prepare_receptor` and 
+  - `prepare_ligand`
 - Download it from https://ccsb.scripps.edu/adfr/downloads/ for the latest Linux version (ADFRsuit 1.0)
 - Put it on a directory, say, Downloads.
 ```
@@ -34,6 +33,8 @@ tar xvf ADFRsuite_x86_64Linux_1.0.tar.gz
   - `export PATH=/home/siida/ADFRsuite-1.0/ADFRsuite_x86_64Linux_1.0/bin:$PATH`
 - Now, all the script given by ADFRsuite are available!
   - say, type `prepare_ligand`.
+
+After this installation, you can use the script in this repo.
 
 ## Specifications
 - 01_prep.sh : Do this first 
