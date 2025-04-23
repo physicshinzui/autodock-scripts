@@ -32,7 +32,8 @@ After this installation, you can use the script in this repo.
 ## Specifications
 - `01_prep.sh` generates pdbqt format inputs are generated for Autodock vina. 
 - `02_dock.sh` executes Autodock vina for each target in the directory `pdbqt`.
-- `inputs` includes receptor pdb and a ligand mol2 files 
+- `inputs` includes `target1`, `target2`, ..., `targetN` directories, each of which contains receptor pdb and a ligand mol2 files 
 - `pdbqt` includes the pdbqt files of the receptor and the ligand (obtained from the `01_prep.sh`)
 - `receptor_vina_box.txt`  specifies the centre of the receptor and the box size where autodock explores.
-- `ligand_vina_out.pdbqt` is an output file from Autodock vina, which stores ligand poses. 
+- `results` stores `target_*_vina_out.pdbqt` for doking poses for each target.
+  - You can load this file in PyMOL and let's visualise the poses on the corresponding target structure.   
