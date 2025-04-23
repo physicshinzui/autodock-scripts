@@ -27,7 +27,8 @@ tar xvf ADFRsuite_x86_64Linux_1.0.tar.gz
 - Now, all the script given by ADFRsuite are available!
   - To check it, type `prepare_ligand`.
 
-After this installation, you can use the script in this repo.
+> [!note]
+> After this installation, you can use the scripts in this repo.
 
 ## Specifications
 - `01_prep.sh` generates pdbqt format inputs are generated for Autodock vina. 
