@@ -6,7 +6,7 @@ target_dirs=`ls $INPUTS`
 for target_dir in $target_dirs; do
     echo "Target dir: $target_dir"
     
-    recepter=`basename $INPUTS/${target_dir}/*_origin.pdb`
+    recepter=`basename $INPUTS/${target_dir}/*.pdb`
     ligand=`basename $INPUTS/${target_dir}/*.mol2`
 
     prepare_receptor -r $INPUTS/$target_dir/$recepter -o pdbqt/${target_dir}_receptor.pdbqt
